@@ -1,0 +1,47 @@
+{
+  "name": "Roblox Tutorial Steps",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "TutorialSteps": { "$path": "TutorialSteps.luau" },
+      "TutorialConfig": { "$path": "TutorialConfig.luau" }
+    },
+    "ServerScriptService": {
+      "TutorialDemo": { "$path": "TutorialDemo.server.luau" }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "TutorialHud": { "$path": "TutorialHud.client.luau" }
+      }
+    },
+    "Workspace": {
+      "Floor": {
+        "$className": "Part",
+        "$properties": { "Anchored": true, "Size": [64, 1, 64], "Position": [0, -0.5, 0] }
+      },
+      "TutorialSpawn": {
+        "$className": "SpawnLocation",
+        "$properties": { "Anchored": true, "Size": [6, 1, 6], "Position": [0, 0.5, 0] }
+      },
+      "TutorialCheckpoints": {
+        "$className": "Folder",
+        "FirstCheckpoint": {
+          "$className": "Part",
+          "$properties": { "Anchored": true, "Size": [3, 3, 3], "Position": [0, 1.5, -12] },
+          "ProximityPrompt": {
+            "$className": "ProximityPrompt",
+            "$properties": { "ActionText": "Activar", "ObjectText": "Punto 1" }
+          }
+        },
+        "SecondCheckpoint": {
+          "$className": "Part",
+          "$properties": { "Anchored": true, "Size": [3, 3, 3], "Position": [12, 1.5, -12] },
+          "ProximityPrompt": {
+            "$className": "ProximityPrompt",
+            "$properties": { "ActionText": "Activar", "ObjectText": "Punto 2" }
+          }
+        }
+      }
+    }
+  }
+}
